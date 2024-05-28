@@ -4,7 +4,7 @@
 Movie Reviews
 
 ## Description
-Movie Reviews is a Django-based web application that allows users to create, view, edit, and delete movie reviews. Each review includes the movie's title, release year, and a brief summary. This application also includes a model for directors, although it's not fully integrated into the provided views.
+Movie Reviews is a Django-based web application that allows users to create, view, edit, and delete movie reviews. Each review includes the movie's title, release year, and a brief summary.
 
 ## Features
 - **Create Movie Reviews**: Users can fill out a form to add a new movie review to the database.
@@ -15,31 +15,33 @@ Movie Reviews is a Django-based web application that allows users to create, vie
 ## Tech Stack
 - **Backend**: Django
 - **Frontend**: HTML, CSS
-- **Database**: SQLite (default for Django projects)
+- **Database**: SQLite
 - **Forms**: Django Forms
 
-## Views
-- `create(request)`: Handles the creation of a new movie review.
-- `list(request)`: Displays all movie reviews.
-- `edit(request, pk)`: Handles the editing of an existing movie review.
-- `delete(request, pk)`: Handles the deletion of a movie review.
+# Steps to Clone and Run the Movie Reviews Django App
 
-## Models
-- `MovieInfo`: Model to store movie details including title, year, and summary.
-- `Director`: Model to store director details, currently not integrated with views.
+## Prerequisites
+- Python installed on your system
+- Django installed (you can use `pip install django` to install Django)
 
-## Forms
-- `MovieForm`: Django ModelForm to create and update `MovieInfo` entries.
+## Steps
 
-## Usage
-1. **Creating a Review**: Navigate to the form to add a new movie review and submit it.
-2. **Listing Reviews**: View all the movie reviews on the list page.
-3. **Editing a Review**: Select a movie review to edit and update its details.
-4. **Deleting a Review**: Select a movie review to delete from the database.
+1. Clone the Repository
+2. Install Dependencies
+3. Run Migrations:
+   Apply the database migrations using the command `python manage.py migrate`.
+4. Start the Development Server:
+   Start the Django development server using the command `python manage.py runserver`.
+5. Access the Application:
+   Open a web browser and navigate to given link to access the application.
 
-## Templates
-- `create.html`: Form for creating and editing movie reviews.
-- `list.html`: Displays the list of all movie reviews.
+## Screenshots
+List:
+![image](https://github.com/aaagrud/movie_review_manager/assets/118443621/f499b509-530b-40f9-8f39-2fdf18c8a797)
+Edit:
+![image](https://github.com/aaagrud/movie_review_manager/assets/118443621/92bc69bd-c097-4a64-9043-eb3022c7cb97)
+Create:
+![image](https://github.com/aaagrud/movie_review_manager/assets/118443621/b0c89293-c071-4912-93cb-de11f5afac35)
 
-## CSS
-- Custom CSS included for styling the templates.
+
+
