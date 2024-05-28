@@ -15,7 +15,11 @@ table{
     justify-content: center;
 }
 
-h1 {
+h2{
+    text-align: center;
+}
+
+h1{
     text-align: center;
     font-size: 2em;
     margin: 0.67em 0;
@@ -62,8 +66,13 @@ table td {
     border-bottom: 1px solid #333333;
 }
 
+a{
+    color: orange;
+    text-decoration: underline;
+}
+
 table th {
-    background-color: #6200ee;
+    background-color: orange;
     color: #ffffff;
     font-weight: bold;
 }
@@ -124,7 +133,7 @@ textarea {
     color: #e0e0e0;
 }
 
-form button {
+button {
     padding: 10px 20px;
     border: none;
     border-radius: 8px;
@@ -134,8 +143,8 @@ form button {
     cursor: pointer;
 }
 
-form button:hover {
-    background-color: #3700b3;
+button:hover {
+    background-color: darkorange;
 }
 
 /* Movie List */
