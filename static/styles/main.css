@@ -1,0 +1,184 @@
+/* main.css */
+
+/* General Styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #121212;
+    color: #e0e0e0;
+}
+
+table{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+h1 {
+    text-align: center;
+    font-size: 2em;
+    margin: 0.67em 0;
+    color: #ffffff;
+}
+
+p {
+    margin: 0.5em 0;
+}
+
+/* Header */
+h1 img {
+    vertical-align: middle;
+    height: 50px;
+}
+
+/* Menu */
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    background-color: #1e1e1e;
+}
+
+
+
+/* Movie List Table */
+table {
+    max-width: 800px;
+    margin: 20px auto;
+    border-collapse: collapse;
+    background-color: #1e1e1e;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+table th,
+table td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid #333333;
+}
+
+table th {
+    background-color: #6200ee;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+table tr:hover {
+    background-color: #333333;
+}
+
+table tr:last-child td {
+    border-bottom: none;
+}
+
+ul li {
+    margin: 0;
+    padding: 10px 20px;
+}
+
+ul li a {
+    text-decoration: none;
+    color: #e0e0e0;
+    font-weight: bold;
+    padding: 10px 20px;
+    display: block;
+    border-radius: 8px;
+}
+
+ul li a:hover {
+    background-color: #333333;
+}
+
+/* Form */
+form {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #1e1e1e;
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+form input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 8px;
+    background-color: #333333;
+    color: #e0e0e0;
+}
+
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 8px;
+    background-color: #333333;
+    color: #e0e0e0;
+}
+
+form button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    background-color: orange;
+    color: #ffffff;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #3700b3;
+}
+
+/* Movie List */
+.movie-list {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #1e1e1e;
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.movie-list h1 {
+    color: #bb86fc;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    ul {
+        flex-direction: column;
+    }
+
+    
+    form,
+    table {
+        width: 90%;
+        margin: 10px auto;
+        padding: 10px;
+    }
+
+    ul li {
+        text-align: center;
+    }
+
+    form,
+    .movie-list {
+        width: 90%;
+        margin: 10px auto;
+        padding: 10px;
+    }
+
+    form input[type="text"],
+    form button {
+        font-size: 1em;
+    }
+}
