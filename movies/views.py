@@ -5,7 +5,7 @@ from . forms import MovieForm
 # Create your views here.
 def create(request):
     if request.POST:
-        frm = MovieForm(request.POST)
+        frm = MovieForm(request.POST, request.FILES)
         if frm.is_valid():
             frm.save()
             return render(request, 'list.html',{'movies' : MovieInfo.objects.all()})
@@ -24,7 +24,7 @@ def edit(request, pk):
     movie_set = MovieInfo.objects.all()
     instance_to_edit = MovieInfo.objects.get(pk=pk)
     if request.POST:
-        frm = MovieForm(request.POST, instance = instance_to_edit)
+        frm = MovieForm(request.POST,request.FILES,instance = instance_to_edit)
         if frm.is_valid():
             instance_to_edit.save()
             return render(request, 'list.html', {'movies' : movie_set})
