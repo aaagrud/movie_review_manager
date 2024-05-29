@@ -37,11 +37,14 @@ Movie Reviews is a Django-based web application that allows users to create, vie
 
 ## Screenshots
 List:
-![image](https://github.com/aaagrud/movie_review_manager/assets/118443621/f499b509-530b-40f9-8f39-2fdf18c8a797)
+![image](https://github.com/aaagrud/movie_review_manager/assets/118443621/d103581c-c688-436c-99fa-7ccd20aa3f50)
+
 Edit:
-![image](https://github.com/aaagrud/movie_review_manager/assets/118443621/92bc69bd-c097-4a64-9043-eb3022c7cb97)
+![image](https://github.com/aaagrud/movie_review_manager/assets/118443621/df68dd25-1931-4333-9d92-1892b540b6b5)
+
 Create:
-![image](https://github.com/aaagrud/movie_review_manager/assets/118443621/b0c89293-c071-4912-93cb-de11f5afac35)
+![image](https://github.com/aaagrud/movie_review_manager/assets/118443621/10ebea52-eb53-4675-9a91-1e77d2602be3)
+
 
 
 
